@@ -10,7 +10,6 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="css/normalize.css">
-	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="sass/main.css">
 </head>
 <body>
@@ -25,7 +24,7 @@
 					<div class="santapolis-main-wrapper__img-bg">
 						<img src="img/mega-banner.png" alt="mega-banner"> 
 					</div>
-					<div class="santapolis-main-wrapper__img-santa" data-aos="fade-up-left" data-aos-duration="2000">
+					<div class="santapolis-main-wrapper__img-santa">
 						<a href="#">
 							<img src="img/Santa_Claus.png" alt="santa"  >
 						</a>
@@ -55,28 +54,24 @@
 	
 </div>
 	
-<!-- <div class="wrapper">
-	<div class="square">
-	  <div class="pivont-point">&bull;</div>
-	</div>
-  </div> -->
 
-  
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script>
-		AOS.init()
+		const rotateArrowHous = document.querySelector('.santapolis-main-wrapper__arrow-hours img');
+		window.addEventListener('scroll', () => {
+			const ev = window.scrollY / 100;
+			rotateArrowHous.style.transform = `rotate(${ev}deg)`;
+		});
+
+		const rotateArrowMinutes = document.querySelector('.santapolis-main-wrapper__arrow-minutes img');
+		window.addEventListener('scroll', () => {
+			const ev = window.scrollY / 7;
+			rotateArrowMinutes.style.transform = `rotate(${ev}deg)`;
+		});
+
+		
+
 	</script>
 
 </body>
 </html>
-
-
-<!-- <div class="santapolis-main-wrapper__arrows">
-						<div class="santapolis-main-wrapper__arrow-minutes">
-							<img src="img/minutes.png" alt="arrow-minutes">
-						</div>
-						<div class="santapolis-main-wrapper__arrow-hours">
-							<img src="" alt="arrow-hours">
-						</div>
-					</div> -->
