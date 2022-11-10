@@ -1,0 +1,156 @@
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+*:before, *:after
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+
+body
+	min-width: 320px
+	position: relative
+	line-height: 1.4
+	font-weight: 400
+	overflow-x: hidden
+	margin: 0
+	// height: 500vh
+	font-family: 'Roboto Serif', serif
+	
+p
+	margin: 0
+
+a
+	text-decoration: none
+	outline: none
+	display: inline-block
+	color: #000
+
+img
+	max-width: 100%
+	height: auto
+	vertical-align: bottom
+
+ul li,
+ol li
+	list-style: none
+	display: block
+	margin: 0
+
+span
+	display: inline-block
+
+ul, ol
+	display: block
+	margin: 0
+	padding-left: 0
+
+button
+	outline: none
+	border: 0
+	padding: 0
+	cursor: pointer
+
+h1, h2, h3, h4, h5, h6
+	margin: 0
+	font-weight: normal
+
+.site-wrap
+	overflow: hidden
+.container
+	margin: 0 auto
+	position: relative
+	// padding: 0 15px
+	width: 100%
+	
+
+
+
+.santapolis-main
+	&-wrapper
+		&__main-bg
+		&__img-bg
+			position: relative
+		&__img-santa
+			width: 22%
+			position: absolute
+			left: 71.8%
+			top: 7%
+			z-index: 1
+		&__header-banners
+			position: absolute
+			top: 12.3%
+			left: 50%
+			width: 46%
+			transform: translateX(-50%)
+			z-index: 7
+		&__offer
+			position: absolute
+			top: 37.6%
+			right: 63.7%
+			width: 27%
+			z-index: 6
+		&__arrow-minutes
+			position: absolute
+			top: 50%
+			left: 50%
+			width: 31%
+			transform: translate(-101%, -52.3%)
+			z-index: 5
+			img
+				transform-origin: right bottom
+				animation: 30s linear infinite arrowHourAnimate 
+		&__arrow-hours
+			position: absolute
+			height: auto
+			top: 50%
+			width: 29.1%
+			left: 50%
+			transform: translate(-4%, -38%)
+			img
+				animation: 45s linear infinite arrowHourAnimate 
+				transform-origin: left bottom
+		&__arrow-logo-santa
+			position: absolute
+			height: auto
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: 8
+			
+		
+			
+			
+
+@keyframes arrowHourAnimate
+	0%
+		transform: rotate(0deg) 
+	100%
+		transform: rotate(100deg)
+
+
+		
+
+
+
+
+
+			
+@import "_media"
